@@ -14,6 +14,7 @@
 		97900496280C264C00877155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97900495280C264C00877155 /* Assets.xcassets */; };
 		9790049C280C264C00877155 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9790049B280C264C00877155 /* main.m */; };
 		979004A3280C3A3700877155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979004A2280C3A3700877155 /* LaunchScreen.storyboard */; };
+		9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		9790049A280C264C00877155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9790049B280C264C00877155 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		979004A2280C3A3700877155 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9798F8F628108D7D00EE9164 /* ViewController+HomeNavbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+HomeNavbar.h"; sourceTree = "<group>"; };
+		9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+HomeNavbar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +64,12 @@
 		97900488280C264B00877155 /* WhatsAppBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				9798F8FD28108E7900EE9164 /* Utils */,
+				9798F8FA28108E4200EE9164 /* Screens */,
 				97900489280C264B00877155 /* AppDelegate.h */,
 				9790048A280C264B00877155 /* AppDelegate.m */,
 				9790048C280C264B00877155 /* SceneDelegate.h */,
 				9790048D280C264B00877155 /* SceneDelegate.m */,
-				9790048F280C264B00877155 /* ViewController.h */,
-				97900490280C264B00877155 /* ViewController.m */,
 				97900492280C264B00877155 /* Main.storyboard */,
 				97900495280C264C00877155 /* Assets.xcassets */,
 				9790049A280C264C00877155 /* Info.plist */,
@@ -74,6 +77,56 @@
 				979004A2280C3A3700877155 /* LaunchScreen.storyboard */,
 			);
 			path = WhatsAppBusiness;
+			sourceTree = "<group>";
+		};
+		9798F8FA28108E4200EE9164 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9798F8FB28108E5A00EE9164 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9798F8FB28108E5A00EE9164 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9798F8FC28108E6500EE9164 /* Components */,
+				9790048F280C264B00877155 /* ViewController.h */,
+				97900490280C264B00877155 /* ViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9798F8FC28108E6500EE9164 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9798F8FF28108E9500EE9164 /* Fab */,
+				9798F8FE28108E8600EE9164 /* Nav */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9798F8FD28108E7900EE9164 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9798F8FE28108E8600EE9164 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				9798F8F628108D7D00EE9164 /* ViewController+HomeNavbar.h */,
+				9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		9798F8FF28108E9500EE9164 /* Fab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */,
 				97900491280C264B00877155 /* ViewController.m in Sources */,
 				9790048B280C264B00877155 /* AppDelegate.m in Sources */,
 				9790049C280C264C00877155 /* main.m in Sources */,
