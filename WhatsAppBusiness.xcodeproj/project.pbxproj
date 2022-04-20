@@ -15,6 +15,7 @@
 		9790049C280C264C00877155 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9790049B280C264C00877155 /* main.m */; };
 		979004A3280C3A3700877155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979004A2280C3A3700877155 /* LaunchScreen.storyboard */; };
 		9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */; };
+		9798F9022810953B00EE9164 /* ViewController+FabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F9012810953B00EE9164 /* ViewController+FabController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		979004A2280C3A3700877155 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9798F8F628108D7D00EE9164 /* ViewController+HomeNavbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+HomeNavbar.h"; sourceTree = "<group>"; };
 		9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+HomeNavbar.m"; sourceTree = "<group>"; };
+		9798F9002810953B00EE9164 /* ViewController+FabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+FabController.h"; sourceTree = "<group>"; };
+		9798F9012810953B00EE9164 /* ViewController+FabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+FabController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 		9798F8FF28108E9500EE9164 /* Fab */ = {
 			isa = PBXGroup;
 			children = (
+				9798F9002810953B00EE9164 /* ViewController+FabController.h */,
+				9798F9012810953B00EE9164 /* ViewController+FabController.m */,
 			);
 			path = Fab;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				97900491280C264B00877155 /* ViewController.m in Sources */,
 				9790048B280C264B00877155 /* AppDelegate.m in Sources */,
 				9790049C280C264C00877155 /* main.m in Sources */,
+				9798F9022810953B00EE9164 /* ViewController+FabController.m in Sources */,
 				9790048E280C264B00877155 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

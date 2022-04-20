@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "meta_logo.png",
+      "filename" : "fabIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "meta_logo-1.png",
+      "filename" : "fabIcon-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "meta_logo-2.png",
+      "filename" : "fabIcon-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -19,8 +19,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }
