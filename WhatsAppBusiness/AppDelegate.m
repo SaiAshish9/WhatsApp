@@ -15,7 +15,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"%@", [UIFont familyNames]);
+//    NSLog(@"%@", [UIFont familyNames]);
     return YES;
 }
 

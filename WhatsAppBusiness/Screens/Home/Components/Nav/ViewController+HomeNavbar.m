@@ -19,8 +19,8 @@
     label.textColor = [UIColor colorNamed:@"silver"];
     label.numberOfLines = 1;
     label.text = @"WhatsApp Business";
-//    sectionLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:18];
-    label.font = [UIFont systemFontOfSize:18 weight: UIFontWeightSemibold];
+    label.font = [UIFont fontWithName:@"Assistant-SemiBold" size:18];
+//    label.font = [UIFont systemFontOfSize:18 weight: UIFontWeightSemibold];
     [navbar addSubview:label];
     [self.view addSubview:navbar];
 }
