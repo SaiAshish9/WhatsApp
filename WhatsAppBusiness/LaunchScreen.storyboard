@@ -60,7 +60,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="meta_logo" width="700" height="394"/>
+        <image name="meta_logo" width="350" height="197"/>
         <image name="whatsapp_logo" width="2500" height="2500"/>
         <namedColor name="dark">
             <color red="0.035294117647058823" green="0.14901960784313725" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

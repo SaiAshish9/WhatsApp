@@ -16,6 +16,11 @@
 		979004A3280C3A3700877155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979004A2280C3A3700877155 /* LaunchScreen.storyboard */; };
 		9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */; };
 		9798F9022810953B00EE9164 /* ViewController+FabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F9012810953B00EE9164 /* ViewController+FabController.m */; };
+		97AED1B7281423D000491B2E /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */; };
+		97AED1B8281423D000491B2E /* Assistant-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B3281423D000491B2E /* Assistant-Light.ttf */; };
+		97AED1B9281423D000491B2E /* Assistant-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */; };
+		97AED1BA281423D000491B2E /* Assistant-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B5281423D000491B2E /* Assistant-ExtraLight.ttf */; };
+		97AED1BB281423D000491B2E /* Assistant-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B6281423D000491B2E /* Assistant-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+HomeNavbar.m"; sourceTree = "<group>"; };
 		9798F9002810953B00EE9164 /* ViewController+FabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+FabController.h"; sourceTree = "<group>"; };
 		9798F9012810953B00EE9164 /* ViewController+FabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+FabController.m"; sourceTree = "<group>"; };
+		97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
+		97AED1B3281423D000491B2E /* Assistant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Light.ttf"; sourceTree = "<group>"; };
+		97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraBold.ttf"; sourceTree = "<group>"; };
+		97AED1B5281423D000491B2E /* Assistant-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraLight.ttf"; sourceTree = "<group>"; };
+		97AED1B6281423D000491B2E /* Assistant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 				9790049A280C264C00877155 /* Info.plist */,
 				9790049B280C264C00877155 /* main.m */,
 				979004A2280C3A3700877155 /* LaunchScreen.storyboard */,
+				97AED1B1281423D000491B2E /* Assistant */,
 			);
 			path = WhatsAppBusiness;
 			sourceTree = "<group>";
@@ -132,6 +143,18 @@
 				9798F9012810953B00EE9164 /* ViewController+FabController.m */,
 			);
 			path = Fab;
+			sourceTree = "<group>";
+		};
+		97AED1B1281423D000491B2E /* Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */,
+				97AED1B3281423D000491B2E /* Assistant-Light.ttf */,
+				97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */,
+				97AED1B5281423D000491B2E /* Assistant-ExtraLight.ttf */,
+				97AED1B6281423D000491B2E /* Assistant-Bold.ttf */,
+			);
+			path = Assistant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +214,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AED1B8281423D000491B2E /* Assistant-Light.ttf in Resources */,
+				97AED1B7281423D000491B2E /* Assistant-SemiBold.ttf in Resources */,
 				979004A3280C3A3700877155 /* LaunchScreen.storyboard in Resources */,
 				97900496280C264C00877155 /* Assets.xcassets in Resources */,
+				97AED1BA281423D000491B2E /* Assistant-ExtraLight.ttf in Resources */,
 				97900494280C264B00877155 /* Main.storyboard in Resources */,
+				97AED1BB281423D000491B2E /* Assistant-Bold.ttf in Resources */,
+				97AED1B9281423D000491B2E /* Assistant-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
