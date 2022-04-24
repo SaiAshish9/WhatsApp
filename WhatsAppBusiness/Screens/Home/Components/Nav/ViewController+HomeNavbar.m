@@ -13,7 +13,7 @@
     UIView *navbar = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height * 0.17)];
     navbar.backgroundColor = [UIColor colorNamed:  @"nav"];
     
-    UILabel *label = [self addLabel];
+    UILabel *label = [self addNavLabel];
     UIImageView *searchIcon = [self addSearchIcon];
     UIImageView *ellipsisIcon = [self addEllipsisIcon];
     
@@ -29,10 +29,10 @@
     [navbar addSubview:tab2];
     [navbar addSubview:tab3];
     [navbar addSubview:cameraCont];
+    [navbar addSubview:cameraIcon];
     [navbar addSubview:label];
     [navbar addSubview:searchIcon];
     [navbar addSubview:ellipsisIcon];
-    [navbar addSubview:cameraIcon];
     [self.view addSubview:navbar];
 }
 
@@ -44,11 +44,10 @@
 
 -(UIView*) addCameraContainer {
     UIView *cameraCont = [[UIView alloc]initWithFrame:CGRectMake(0, 102, self.view.frame.size.width * 0.13, 40)];
-    cameraCont.backgroundColor = [UIColor redColor];
     return cameraCont;
 }
 
--(UILabel*) addLabel {
+-(UILabel*) addNavLabel {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(18, 63, self.view.frame.size.width*0.6, 18)];
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentLeft;
