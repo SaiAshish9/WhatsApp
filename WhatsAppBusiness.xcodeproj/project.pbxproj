@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97095E2C2815D19700DA76D9 /* ViewController+OneSidedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97095E2B2815D19700DA76D9 /* ViewController+OneSidedBorder.m */; };
 		9790048B280C264B00877155 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9790048A280C264B00877155 /* AppDelegate.m */; };
 		9790048E280C264B00877155 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9790048D280C264B00877155 /* SceneDelegate.m */; };
 		97900491280C264B00877155 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97900490280C264B00877155 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97095E2A2815D19700DA76D9 /* ViewController+OneSidedBorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+OneSidedBorder.h"; sourceTree = "<group>"; };
+		97095E2B2815D19700DA76D9 /* ViewController+OneSidedBorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+OneSidedBorder.m"; sourceTree = "<group>"; };
 		97900486280C264B00877155 /* WhatsAppBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97900489280C264B00877155 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9790048A280C264B00877155 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 		9798F8FD28108E7900EE9164 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				97095E2A2815D19700DA76D9 /* ViewController+OneSidedBorder.h */,
+				97095E2B2815D19700DA76D9 /* ViewController+OneSidedBorder.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				9790048B280C264B00877155 /* AppDelegate.m in Sources */,
 				9790049C280C264C00877155 /* main.m in Sources */,
 				9798F9022810953B00EE9164 /* ViewController+FabController.m in Sources */,
+				97095E2C2815D19700DA76D9 /* ViewController+OneSidedBorder.m in Sources */,
 				9790048E280C264B00877155 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
