@@ -16,10 +16,12 @@
     UILabel *label = [self addLabel];
     UIImageView *searchIcon = [self addSearchIcon];
     UIImageView *ellipsisIcon = [self addEllipsisIcon];
+    UIImageView *cameraIcon = [self addCameraIcon];
 
     [navbar addSubview:label];
     [navbar addSubview:searchIcon];
     [navbar addSubview:ellipsisIcon];
+    [navbar addSubview:cameraIcon];
     [self.view addSubview:navbar];
 }
 
@@ -51,6 +53,14 @@
     imageView.tintColor = [UIColor colorNamed:  @"silver"];
     imageView.frame = CGRectMake(self.view.frame.size.width * 0.78 + 50, 68, imageView.frame.size.width, imageView.frame.size.height);
     imageView.transform = CGAffineTransformMakeRotation(-M_PI / 2);
+    return imageView;
+}
+
+-(UIImageView*) addCameraIcon {
+    UIImage *image = [UIImage systemImageNamed:@"camera.fill" ];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.tintColor = [UIColor colorNamed:  @"silver"];
+    imageView.frame = CGRectMake(13, 108, imageView.frame.size.width, imageView.frame.size.height);
     return imageView;
 }
 
