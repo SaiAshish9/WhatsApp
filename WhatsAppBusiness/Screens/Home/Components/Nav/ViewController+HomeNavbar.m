@@ -48,6 +48,11 @@
     label.font = [UIFont fontWithName:@"Assistant-SemiBold" size:16];
     [navbar addSubview:label];
     [label setCenter:tabCont.center];
+//    tabCont.layer.borderColor =  [UIColor colorNamed:textColor].CGColor;
+//    tabCont.layer.borderWidth= 3.0;
+//    [tabCont setClipsToBounds:YES];
+    NSString *borderColor = index == 0 ? @"fab": @"nav";
+    [self addBottomBorderWithColor:[UIColor colorNamed:borderColor] andWidth:2.7 view:tabCont];
     return tabCont;
 }
 
@@ -92,6 +97,38 @@
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.tintColor = [UIColor colorNamed:  @"silver"];
     return imageView;
+}
+
+- (void)addTopBorderWithColor:(UIColor *)color andWidth:(CGFloat) borderWidth view: (UIView*) view {
+    UIView *border = [UIView new];
+    border.backgroundColor = color;
+    [border setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin];
+    border.frame = CGRectMake(0, 0, view.frame.size.width, borderWidth);
+    [view addSubview:border];
+}
+
+- (void)addBottomBorderWithColor:(UIColor *)color andWidth:(CGFloat) borderWidth view: (UIView*) view {
+    UIView *border = [UIView new];
+    border.backgroundColor = color;
+    [border setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin];
+    border.frame = CGRectMake(0, view.frame.size.height - borderWidth, view.frame.size.width, borderWidth);
+    [view addSubview:border];
+}
+
+- (void)addLeftBorderWithColor:(UIColor *)color andWidth:(CGFloat) borderWidth view: (UIView*) view {
+    UIView *border = [UIView new];
+    border.backgroundColor = color;
+    border.frame = CGRectMake(0, 0, borderWidth, view.frame.size.height);
+    [border setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin];
+    [view addSubview:border];
+}
+
+- (void)addRightBorderWithColor:(UIColor *)color andWidth:(CGFloat) borderWidth view: (UIView*) view {
+    UIView *border = [UIView new];
+    border.backgroundColor = color;
+    [border setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin];
+    border.frame = CGRectMake(view.frame.size.width - borderWidth, 0, borderWidth, view.frame.size.height);
+    [view addSubview:border];
 }
 
 @end
