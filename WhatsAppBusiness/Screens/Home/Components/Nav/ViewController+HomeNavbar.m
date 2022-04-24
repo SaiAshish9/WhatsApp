@@ -16,13 +16,36 @@
     UILabel *label = [self addLabel];
     UIImageView *searchIcon = [self addSearchIcon];
     UIImageView *ellipsisIcon = [self addEllipsisIcon];
+    
     UIImageView *cameraIcon = [self addCameraIcon];
-
+    UIView *cameraCont = [self addCameraContainer];
+    cameraIcon.center = cameraCont.center;
+    
+    UIView *tab1 = [self addTabCont:[UIColor greenColor] count:0];
+    UIView *tab2 = [self addTabCont:[UIColor yellowColor] count:1];
+    UIView *tab3 = [self addTabCont:[UIColor orangeColor] count:2];
+    
+    [navbar addSubview:tab1];
+    [navbar addSubview:tab2];
+    [navbar addSubview:tab3];
+    [navbar addSubview:cameraCont];
     [navbar addSubview:label];
     [navbar addSubview:searchIcon];
     [navbar addSubview:ellipsisIcon];
     [navbar addSubview:cameraIcon];
     [self.view addSubview:navbar];
+}
+
+-(UIView *) addTabCont: (UIColor *)color count: (int) index {
+    UIView *cameraCont = [[UIView alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.13  + (self.view.frame.size.width * 0.29 * index), 102, self.view.frame.size.width * 0.29, 40)];
+    cameraCont.backgroundColor = color;
+    return cameraCont;
+}
+
+-(UIView*) addCameraContainer {
+    UIView *cameraCont = [[UIView alloc]initWithFrame:CGRectMake(0, 102, self.view.frame.size.width * 0.13, 40)];
+    cameraCont.backgroundColor = [UIColor redColor];
+    return cameraCont;
 }
 
 -(UILabel*) addLabel {
@@ -60,7 +83,6 @@
     UIImage *image = [UIImage systemImageNamed:@"camera.fill" ];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.tintColor = [UIColor colorNamed:  @"silver"];
-    imageView.frame = CGRectMake(13, 108, imageView.frame.size.width, imageView.frame.size.height);
     return imageView;
 }
 
