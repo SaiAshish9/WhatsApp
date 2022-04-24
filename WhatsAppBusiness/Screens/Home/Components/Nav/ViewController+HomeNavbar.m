@@ -21,25 +21,34 @@
     UIView *cameraCont = [self addCameraContainer];
     cameraIcon.center = cameraCont.center;
     
-    UIView *tab1 = [self addTabCont:[UIColor greenColor] count:0];
-    UIView *tab2 = [self addTabCont:[UIColor yellowColor] count:1];
-    UIView *tab3 = [self addTabCont:[UIColor orangeColor] count:2];
+    UIView *tab1 = [self addTabCont:0 nav:navbar title:@"CHATS"];
+    UIView *tab2 = [self addTabCont:1 nav:navbar title:@"STATUS"];
+    UIView *tab3 = [self addTabCont:2 nav:navbar title:@"CALLS"];
     
     [navbar addSubview:tab1];
     [navbar addSubview:tab2];
     [navbar addSubview:tab3];
-    [navbar addSubview:cameraCont];
     [navbar addSubview:cameraIcon];
+    [navbar addSubview:cameraCont];
     [navbar addSubview:label];
     [navbar addSubview:searchIcon];
     [navbar addSubview:ellipsisIcon];
     [self.view addSubview:navbar];
 }
 
--(UIView *) addTabCont: (UIColor *)color count: (int) index {
-    UIView *cameraCont = [[UIView alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.13  + (self.view.frame.size.width * 0.29 * index), 102, self.view.frame.size.width * 0.29, 40)];
-    cameraCont.backgroundColor = color;
-    return cameraCont;
+-(UIView *) addTabCont: (int) index nav: (UIView *) navbar title: (NSString *) title {
+    UIView *tabCont = [[UIView alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.13  + (self.view.frame.size.width * 0.29 * index), 102, self.view.frame.size.width * 0.29, 40)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tabCont.frame.size.width, tabCont.frame.size.height)];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    NSString *textColor = index == 0 ? @"fab": @"silver";
+    label.textColor = [UIColor colorNamed:textColor];
+    label.numberOfLines = 0;
+    label.text = title;
+    label.font = [UIFont fontWithName:@"Assistant-SemiBold" size:16];
+    [navbar addSubview:label];
+    [label setCenter:tabCont.center];
+    return tabCont;
 }
 
 -(UIView*) addCameraContainer {
