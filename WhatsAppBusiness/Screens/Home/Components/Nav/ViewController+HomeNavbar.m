@@ -1,10 +1,3 @@
-//
-//  ViewController+HomeNavbar.m
-//  WhatsAppBusiness
-//
-//  Created by Sai Ashish Darapureddy on 21/04/22.
-//
-
 #import "ViewController+HomeNavbar.h"
 #import "ViewController+OneSidedBorder.h"
 
@@ -17,7 +10,7 @@
     UILabel *label = [self addNavLabel];
     UIImageView *searchIcon = [self addSearchIcon];
     UIImageView *ellipsisIcon = [self addEllipsisIcon];
-    
+
     UIImageView *cameraIcon = [self addCameraIcon];
     UIView *cameraCont = [self addCameraContainer];
     cameraIcon.center = cameraCont.center;
@@ -99,7 +92,5 @@
     imageView.tintColor = [UIColor colorNamed:  @"silver"];
     return imageView;
 }
-
-
 
 @end
