@@ -10,6 +10,7 @@
 		97095E2C2815D19700DA76D9 /* ViewController+OneSidedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97095E2B2815D19700DA76D9 /* ViewController+OneSidedBorder.m */; };
 		9742D8642827E10300408E88 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9742D8632827E10300408E88 /* CustomTableCell.xib */; };
 		9742D8672827E41F00408E88 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9742D8662827E41F00408E88 /* CustomTableCell.m */; };
+		9742D86A2827F9FC00408E88 /* ViewController+TableViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9742D8692827F9FC00408E88 /* ViewController+TableViewContainer.m */; };
 		9790048B280C264B00877155 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9790048A280C264B00877155 /* AppDelegate.m */; };
 		9790048E280C264B00877155 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9790048D280C264B00877155 /* SceneDelegate.m */; };
 		97900491280C264B00877155 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97900490280C264B00877155 /* ViewController.m */; };
@@ -20,7 +21,6 @@
 		9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */; };
 		9798F9022810953B00EE9164 /* ViewController+FabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F9012810953B00EE9164 /* ViewController+FabController.m */; };
 		97A6EA2228263ED8002AAE8C /* ViewController+ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EA2128263ED8002AAE8C /* ViewController+ScrollView.m */; };
-		97A6EA2628267CF4002AAE8C /* TableViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EA2528267CF4002AAE8C /* TableViewContainer.m */; };
 		97AED1B7281423D000491B2E /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */; };
 		97AED1B8281423D000491B2E /* Assistant-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B3281423D000491B2E /* Assistant-Light.ttf */; };
 		97AED1B9281423D000491B2E /* Assistant-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */; };
@@ -34,6 +34,8 @@
 		9742D8632827E10300408E88 /* CustomTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
 		9742D8652827E41F00408E88 /* CustomTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		9742D8662827E41F00408E88 /* CustomTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		9742D8682827F9FC00408E88 /* ViewController+TableViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+TableViewContainer.h"; sourceTree = "<group>"; };
+		9742D8692827F9FC00408E88 /* ViewController+TableViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+TableViewContainer.m"; sourceTree = "<group>"; };
 		97900486280C264B00877155 /* WhatsAppBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97900489280C264B00877155 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9790048A280C264B00877155 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		9798F9012810953B00EE9164 /* ViewController+FabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+FabController.m"; sourceTree = "<group>"; };
 		97A6EA2028263ED8002AAE8C /* ViewController+ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+ScrollView.h"; sourceTree = "<group>"; };
 		97A6EA2128263ED8002AAE8C /* ViewController+ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+ScrollView.m"; sourceTree = "<group>"; };
-		97A6EA2428267CF4002AAE8C /* TableViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewContainer.h; sourceTree = "<group>"; };
-		97A6EA2528267CF4002AAE8C /* TableViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewContainer.m; sourceTree = "<group>"; };
 		97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
 		97AED1B3281423D000491B2E /* Assistant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Light.ttf"; sourceTree = "<group>"; };
 		97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -175,11 +175,11 @@
 		97A6EA2328267CDA002AAE8C /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				97A6EA2428267CF4002AAE8C /* TableViewContainer.h */,
-				97A6EA2528267CF4002AAE8C /* TableViewContainer.m */,
 				9742D8632827E10300408E88 /* CustomTableCell.xib */,
 				9742D8652827E41F00408E88 /* CustomTableCell.h */,
 				9742D8662827E41F00408E88 /* CustomTableCell.m */,
+				9742D8682827F9FC00408E88 /* ViewController+TableViewContainer.h */,
+				9742D8692827F9FC00408E88 /* ViewController+TableViewContainer.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -272,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9742D86A2827F9FC00408E88 /* ViewController+TableViewContainer.m in Sources */,
 				9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */,
-				97A6EA2628267CF4002AAE8C /* TableViewContainer.m in Sources */,
 				97900491280C264B00877155 /* ViewController.m in Sources */,
 				97A6EA2228263ED8002AAE8C /* ViewController+ScrollView.m in Sources */,
 				9790048B280C264B00877155 /* AppDelegate.m in Sources */,

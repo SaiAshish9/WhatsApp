@@ -1,5 +1,5 @@
 #import "ViewController+ScrollView.h"
-#import "TableViewContainer.h"
+#import "ViewController+TableViewContainer.h"
 
 @implementation ViewController (ScrollView)
 
@@ -19,8 +19,7 @@
           UIView *view = [[UIView alloc] initWithFrame:CGRectMake(x, 0,self.view.frame.size.width, self .view.frame.size.height* 0.83)];
           view.backgroundColor = colors[i];
            if(i==1){
-               TableViewController *tableView = [[TableViewController alloc] init];
-               [tableView cofigureTableView:view];
+               [self configureTableView:view];
            }
           [scrollview addSubview:view];
        }
