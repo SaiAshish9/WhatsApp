@@ -1,4 +1,5 @@
 #import "ViewController+ScrollView.h"
+#import "TableViewContainer.h"
 
 @implementation ViewController (ScrollView)
 
@@ -17,6 +18,10 @@
           CGFloat x = i * self.view.frame.size.width;
           UIView *view = [[UIView alloc] initWithFrame:CGRectMake(x, 0,self.view.frame.size.width, self .view.frame.size.height* 0.83)];
           view.backgroundColor = colors[i];
+           if(i==1){
+               TableViewController *tableView = [[TableViewController alloc] init];
+               [tableView cofigureTableView:view];
+           }
           [scrollview addSubview:view];
        }
     [scrollview setClipsToBounds:NO];

@@ -18,6 +18,7 @@
 		9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F8F728108D7D00EE9164 /* ViewController+HomeNavbar.m */; };
 		9798F9022810953B00EE9164 /* ViewController+FabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798F9012810953B00EE9164 /* ViewController+FabController.m */; };
 		97A6EA2228263ED8002AAE8C /* ViewController+ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EA2128263ED8002AAE8C /* ViewController+ScrollView.m */; };
+		97A6EA2628267CF4002AAE8C /* TableViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6EA2528267CF4002AAE8C /* TableViewContainer.m */; };
 		97AED1B7281423D000491B2E /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */; };
 		97AED1B8281423D000491B2E /* Assistant-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B3281423D000491B2E /* Assistant-Light.ttf */; };
 		97AED1B9281423D000491B2E /* Assistant-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */; };
@@ -46,6 +47,8 @@
 		9798F9012810953B00EE9164 /* ViewController+FabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+FabController.m"; sourceTree = "<group>"; };
 		97A6EA2028263ED8002AAE8C /* ViewController+ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+ScrollView.h"; sourceTree = "<group>"; };
 		97A6EA2128263ED8002AAE8C /* ViewController+ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+ScrollView.m"; sourceTree = "<group>"; };
+		97A6EA2428267CF4002AAE8C /* TableViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewContainer.h; sourceTree = "<group>"; };
+		97A6EA2528267CF4002AAE8C /* TableViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewContainer.m; sourceTree = "<group>"; };
 		97AED1B2281423D000491B2E /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
 		97AED1B3281423D000491B2E /* Assistant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Light.ttf"; sourceTree = "<group>"; };
 		97AED1B4281423D000491B2E /* Assistant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 		9798F8FC28108E6500EE9164 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				97A6EA2328267CDA002AAE8C /* TableView */,
 				97A6EA1F28263EBD002AAE8C /* ScrollView */,
 				9798F8FF28108E9500EE9164 /* Fab */,
 				9798F8FE28108E8600EE9164 /* Nav */,
@@ -161,6 +165,15 @@
 				97A6EA2128263ED8002AAE8C /* ViewController+ScrollView.m */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		97A6EA2328267CDA002AAE8C /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				97A6EA2428267CF4002AAE8C /* TableViewContainer.h */,
+				97A6EA2528267CF4002AAE8C /* TableViewContainer.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		97AED1B1281423D000491B2E /* Assistant */ = {
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9798F8F828108D7D00EE9164 /* ViewController+HomeNavbar.m in Sources */,
+				97A6EA2628267CF4002AAE8C /* TableViewContainer.m in Sources */,
 				97900491280C264B00877155 /* ViewController.m in Sources */,
 				97A6EA2228263ED8002AAE8C /* ViewController+ScrollView.m in Sources */,
 				9790048B280C264B00877155 /* AppDelegate.m in Sources */,
