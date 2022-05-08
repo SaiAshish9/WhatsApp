@@ -34,7 +34,6 @@
     [scrollview scrollRectToVisible:frame animated:YES];
     [scrollview setShowsHorizontalScrollIndicator:NO];
     [scrollview setBounces:NO];
-    
 }
 
 @end

@@ -1,28 +1,27 @@
-//
-//  ViewController+TableViewContainer.m
-//  WhatsAppBusiness
-//
-//  Created by Sai Ashish Darapureddy on 07/05/22.
-//
-
 #import "TableViewContainer.h"
+#import "CustomTableCell.h"
 
 @interface TableViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation TableViewController {
+    NSArray *tableData;
+    NSArray *thumbnails;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
 }
 
 -(void)cofigureTableView:(UIView *) view
 {
-    self.table = [[UITableView alloc] initWithFrame:view.bounds style:UITableViewStylePlain];
+    self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
+    thumbnails = [NSArray arrayWithObjects:@"fabIcon", @"fabIcon",@"fabIcon", @"fabIcon",@"fabIcon", @"fabIcon",@"fabIcon", nil];
+    self.table = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.table.delegate = self;
     self.table.dataSource = self;
+    self.table.backgroundColor = [UIColor yellowColor];
     [view addSubview:self.table];
 }
 
@@ -36,21 +35,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"cell";
-
-    UITableViewCell *cell = [self.table dequeueReusableCellWithIdentifier:cellIdentifier];
-
-    if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-
+    static NSString *simpleTableIdentifier = @"CustomTableCell";
+    NSLog(@"%@", simpleTableIdentifier);
+    CustomTableCell *cell = (CustomTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
-    cell.textLabel.text =  [self.content objectAtIndex:indexPath.row];
+    cell.backgroundColor = [UIColor redColor];
+    cell.nameLabel.text = [self.content objectAtIndex:indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    cell.prepTimeLabel.text = [self.content objectAtIndex:indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     NSLog(@"title of cell %@", [self.content objectAtIndex:indexPath.row]);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 78;
 }
 
 @end
