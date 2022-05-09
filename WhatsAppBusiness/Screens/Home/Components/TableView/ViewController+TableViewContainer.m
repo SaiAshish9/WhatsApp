@@ -15,7 +15,7 @@
     [self.table setSeparatorColor: [UIColor clearColor]];
     [view addSubview:self.table];
     [self.table setShowsVerticalScrollIndicator:NO];
-    self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday",@"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
+    self.content = @[ @"Sakshi", @"Sarthak", @"Vyshu",@"Mom",@"Anant",@"Dhruv",@"Vyshu",@"Sai", @"Harshita", @"Vaishnavi",@"Rajat",@"Shashwat",@"CSE II",@"7 geniuses inside 🤯"];
     self.thumbnails = [NSArray arrayWithObjects:@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", nil];
 }
 
@@ -58,6 +58,9 @@
     cell.timelineLabel.textColor = [UIColor colorNamed:@"silver"];
     cell.timelineLabel.font = [UIFont fontWithName:@"Assistant-SemiBold" size:14];
     cell.timelineLabel.text = @"14:29";
+    UIView *bgColorView = [[UIView alloc] init];
+    bgColorView.backgroundColor =[UIColor colorNamed:@"selectedCell"];
+    [cell setSelectedBackgroundView:bgColorView];
 //    UITableViewCell *cell = [self.table dequeueReusableCellWithIdentifier:cellIdentifier];
 //    if(cell == nil) {
 //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
