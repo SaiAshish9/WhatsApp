@@ -1,10 +1,3 @@
-//
-//  ViewController+TableViewContainer.m
-//  WhatsAppBusiness
-//
-//  Created by Sai Ashish Darapureddy on 08/05/22.
-//
-
 #import "ViewController+TableViewContainer.h"
 #import "CustomTableCell.h"
 
@@ -46,6 +39,8 @@
     cell.thumbnailImageView.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
     cell.prepTimeLabel.textColor = [UIColor whiteColor];
     cell.prepTimeLabel.text = [self.content objectAtIndex:indexPath.row];
+    cell.timelineLabel.textColor = [UIColor whiteColor];
+    cell.timelineLabel.text = @"14:29";
 //    UITableViewCell *cell = [self.table dequeueReusableCellWithIdentifier:cellIdentifier];
 //    if(cell == nil) {
 //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
