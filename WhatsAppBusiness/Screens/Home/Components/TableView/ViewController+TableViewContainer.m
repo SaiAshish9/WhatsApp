@@ -36,11 +36,14 @@
     }
     cell.backgroundColor = [UIColor clearColor];
     cell.nameLabel.textColor = [UIColor whiteColor];
+    cell.nameLabel.font = [UIFont fontWithName:@"Assistant-SemiBold" size:18];
     cell.nameLabel.text = [self.content objectAtIndex:indexPath.row];
     cell.thumbnailImageView.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
-    cell.prepTimeLabel.textColor = [UIColor whiteColor];
+    cell.prepTimeLabel.textColor = [UIColor colorNamed:@"silver"];
+    cell.prepTimeLabel.font = [UIFont fontWithName:@"Assistant-Light" size:15];
     cell.prepTimeLabel.text = [self.content objectAtIndex:indexPath.row];
-    cell.timelineLabel.textColor = [UIColor whiteColor];
+    cell.timelineLabel.textColor = [UIColor colorNamed:@"silver"];
+    cell.timelineLabel.font = [UIFont fontWithName:@"Assistant-SemiBold" size:14];
     cell.timelineLabel.text = @"14:29";
 //    UITableViewCell *cell = [self.table dequeueReusableCellWithIdentifier:cellIdentifier];
 //    if(cell == nil) {
