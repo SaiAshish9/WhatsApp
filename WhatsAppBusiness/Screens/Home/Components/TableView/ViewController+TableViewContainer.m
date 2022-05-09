@@ -38,7 +38,12 @@
     cell.nameLabel.textColor = [UIColor whiteColor];
     cell.nameLabel.font = [UIFont fontWithName:@"Assistant-SemiBold" size:18];
     cell.nameLabel.text = [self.content objectAtIndex:indexPath.row];
-    cell.thumbnailImageView.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
+    
+    cell.thumbnailImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[
+        NSURL URLWithString:@"https://lh3.google.com/u/5/ogw/ADea4I6UW5E-Cv6MrdoHol9xpICxyE6K1clvnUDiqKY_=s192-c-mo"
+       ]]];
+//    [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
+    
     cell.prepTimeLabel.textColor = [UIColor colorNamed:@"silver"];
     cell.prepTimeLabel.font = [UIFont fontWithName:@"Assistant-Light" size:15];
     cell.prepTimeLabel.text = [self.content objectAtIndex:indexPath.row];
