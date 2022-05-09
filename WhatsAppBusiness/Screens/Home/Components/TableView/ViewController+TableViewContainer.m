@@ -15,10 +15,11 @@
     self.table = [[UITableView alloc] initWithFrame:view.bounds style:UITableViewStylePlain];
     self.table.delegate = self;
     self.table.dataSource = self;
+    self.table.backgroundColor = [UIColor clearColor];
     [self.table setSeparatorColor: [UIColor clearColor]];
     [view addSubview:self.table];
-    self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
-    self.thumbnails = [NSArray arrayWithObjects:@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", nil];
+    self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday",@"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
+    self.thumbnails = [NSArray arrayWithObjects:@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", nil];
 }
 
 
@@ -39,8 +40,11 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomTableCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
+    cell.backgroundColor = [UIColor clearColor];
+    cell.nameLabel.textColor = [UIColor whiteColor];
     cell.nameLabel.text = [self.content objectAtIndex:indexPath.row];
     cell.thumbnailImageView.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
+    cell.prepTimeLabel.textColor = [UIColor whiteColor];
     cell.prepTimeLabel.text = [self.content objectAtIndex:indexPath.row];
 //    UITableViewCell *cell = [self.table dequeueReusableCellWithIdentifier:cellIdentifier];
 //    if(cell == nil) {
