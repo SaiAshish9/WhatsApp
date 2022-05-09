@@ -44,6 +44,9 @@
        ]]];
 //    [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
     
+    cell.thumbnailImageView.layer.cornerRadius = cell.thumbnailImageView.frame.size.width / 2;
+    cell.thumbnailImageView.clipsToBounds = YES;
+    
     cell.prepTimeLabel.textColor = [UIColor colorNamed:@"silver"];
     cell.prepTimeLabel.font = [UIFont fontWithName:@"Assistant-Light" size:15];
     cell.prepTimeLabel.text = [self.content objectAtIndex:indexPath.row];
