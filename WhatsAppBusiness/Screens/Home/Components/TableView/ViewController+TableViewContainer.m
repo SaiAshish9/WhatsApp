@@ -50,7 +50,7 @@
     cell.thumbnailImageView.layer.cornerRadius = cell.thumbnailImageView.frame.size.width / 2;
     cell.thumbnailImageView.clipsToBounds = YES;
     [cell.thumbnailImageView sd_setImageWithURL:[NSURL URLWithString:@"https://lh3.google.com/u/5/ogw/ADea4I6UW5E-Cv6MrdoHol9xpICxyE6K1clvnUDiqKY_=s192-c-mo"]
-                 placeholderImage:[UIImage imageNamed:@"whatsapp_logo"]];
+                 placeholderImage:[UIImage imageNamed:@"thumbnail"]];
     
     cell.prepTimeLabel.textColor = [UIColor colorNamed:@"silver"];
     cell.prepTimeLabel.font = [UIFont fontWithName:@"Assistant-Light" size:15];
