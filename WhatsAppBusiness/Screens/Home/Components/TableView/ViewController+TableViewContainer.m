@@ -11,6 +11,7 @@
     self.table.backgroundColor = [UIColor clearColor];
     [self.table setSeparatorColor: [UIColor clearColor]];
     [view addSubview:self.table];
+    [self.table setShowsVerticalScrollIndicator:NO];
     self.content = @[ @"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday",@"Monday", @"Tuesday", @"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
     self.thumbnails = [NSArray arrayWithObjects:@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", @"whatsapp_logo",@"whatsapp_logo", nil];
 }
