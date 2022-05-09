@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97090F922829A9FC00F7B57F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 97090F912829A9FC00F7B57F /* SDWebImage */; };
 		97095E2C2815D19700DA76D9 /* ViewController+OneSidedBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97095E2B2815D19700DA76D9 /* ViewController+OneSidedBorder.m */; };
 		9742D8642827E10300408E88 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9742D8632827E10300408E88 /* CustomTableCell.xib */; };
 		9742D8672827E41F00408E88 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9742D8662827E41F00408E88 /* CustomTableCell.m */; };
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97090F922829A9FC00F7B57F /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +214,9 @@
 			dependencies = (
 			);
 			name = WhatsAppBusiness;
+			packageProductDependencies = (
+				97090F912829A9FC00F7B57F /* SDWebImage */,
+			);
 			productName = WhatsAppBusiness;
 			productReference = 97900486280C264B00877155 /* WhatsAppBusiness.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 9790047D280C264B00877155;
+			packageReferences = (
+				97090F902829A9FC00F7B57F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 97900487280C264B00877155 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -489,6 +497,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97090F902829A9FC00F7B57F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97090F912829A9FC00F7B57F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97090F902829A9FC00F7B57F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9790047E280C264B00877155 /* Project object */;
 }
