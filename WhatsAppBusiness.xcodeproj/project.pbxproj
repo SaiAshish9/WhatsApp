@@ -175,8 +175,8 @@
 		97A6EA2328267CDA002AAE8C /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				9742D8632827E10300408E88 /* CustomTableCell.xib */,
 				9742D8652827E41F00408E88 /* CustomTableCell.h */,
+				9742D8632827E10300408E88 /* CustomTableCell.xib */,
 				9742D8662827E41F00408E88 /* CustomTableCell.m */,
 				9742D8682827F9FC00408E88 /* ViewController+TableViewContainer.h */,
 				9742D8692827F9FC00408E88 /* ViewController+TableViewContainer.m */,

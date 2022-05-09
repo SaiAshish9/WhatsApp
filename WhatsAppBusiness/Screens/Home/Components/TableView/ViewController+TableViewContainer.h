@@ -9,13 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController (TableViewContainer) 
+@interface ViewController (TableViewContainer)  <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong,nonatomic) UITableView *table;
-@property (strong,nonatomic) NSArray     *content;
-@property (strong,nonatomic) NSArray  *thumbnails;
-
--(void)configureTableView:(UIView*)view;
+-(void)configureTableView: (UIView *) view;
 
 @end
 
