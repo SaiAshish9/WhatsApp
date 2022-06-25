@@ -29,10 +29,17 @@
     [self.view addSubview:scrollview];
     CGRect frame = scrollview.frame;
     frame.origin.x = frame.size.width;
+    scrollview.delegate = self;
     frame.origin.y = 0;
     [scrollview scrollRectToVisible:frame animated:YES];
     [scrollview setShowsHorizontalScrollIndicator:NO];
     [scrollview setBounces:NO];
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+   int indexOfPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+   self.currentHomePageIndex = indexOfPage;
 }
 
 @end

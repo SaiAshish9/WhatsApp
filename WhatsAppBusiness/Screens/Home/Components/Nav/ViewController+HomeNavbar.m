@@ -35,7 +35,8 @@
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tabCont.frame.size.width, tabCont.frame.size.height)];
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
-    NSString *textColor = index == 0 ? @"fab": @"silver";
+    NSString *textColor = index ==  0 ? @"fab": @"silver";
+//    self.currentHomePageIndex - 1
     label.textColor = [UIColor colorNamed:textColor];
     label.numberOfLines = 0;
     label.text = title;
@@ -45,7 +46,8 @@
 //    tabCont.layer.borderColor =  [UIColor colorNamed:textColor].CGColor;
 //    tabCont.layer.borderWidth= 3.0;
 //    [tabCont setClipsToBounds:YES];
-    NSString *borderColor = index == 0 ? @"fab": @"nav";
+    NSString *borderColor = index == 0  ? @"fab": @"nav";
+//    self.currentHomePageIndex - 1
     [self addBottomBorderWithColor:[UIColor colorNamed:borderColor] andWidth:2.7 view:tabCont];
     return tabCont;
 }

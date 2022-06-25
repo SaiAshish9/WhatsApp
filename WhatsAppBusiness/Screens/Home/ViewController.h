@@ -12,7 +12,10 @@
 
 @property (strong,nonatomic) UITableView *table;
 @property (strong,nonatomic) NSArray     *content;
+@property (strong,nonatomic) NSArray  *desc;
+@property (strong,nonatomic) NSArray  *timeline;
 @property (strong,nonatomic) NSArray  *thumbnails;
+@property int currentHomePageIndex;
 
 @end
 
